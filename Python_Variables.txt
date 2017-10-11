@@ -1,0 +1,16 @@
+Python Values and Integers:
+============================
+
+>>> type('print')
+<type 'str'>
+>>> type(9)
+<type 'int'>
+>>> type('9')
+<type 'str'>
+>>> type(3.2)
+<type 'float'>
+>>> type('3.2')
+<type 'str'>
+>>>
+
+Python 

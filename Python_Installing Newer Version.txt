@@ -1,0 +1,37 @@
+Installing Python from a tar file:
+===================================
+
+# wget https://www.python.org/ftp/python/3.6.0/Python-3.6.0.tar.xz
+# tar xJf Python-3.6.0.tar.xz
+# cd Python-3.6.0
+# ./configure
+# make
+# make install
+
+Now relax and go grab a sandwich because this may take a while. When the installation is complete, use which to verify the location of the main binary:
+
+# which python3
+# python3 -V
+
+If you have already installed python2 and python3, by default python shows python2.
+
+To change default python to python3.
+
+Removing python2.x and installing python3.x:
+==============================================
+
+[root@docker-git-puppet Python-3.6.2]# which python
+/usr/bin/python
+[root@docker-git-puppet Python-3.6.2]# which python3
+/usr/local/bin/python3
+[root@docker-git-puppet Python-3.6.2]# file /usr/bin/python
+/usr/bin/python: symbolic link to `python2'
+[root@docker-git-puppet Python-3.6.2]# file /usr/local/bin/python3
+/usr/local/bin/python3: symbolic link to `python3.6'
+[root@docker-git-puppet Python-3.6.2]# cd /usr/bin
+[root@docker-git-puppet bin]# rm /usr/bin/python
+rm: remove symbolic link â/usr/bin/pythonâ? y
+[root@docker-git-puppet bin]# ln -s /usr/local/bin/python3 python
+[root@docker-git-puppet bin]# python -V
+Python 3.6.2
+[root@docker-git-puppet bin]#

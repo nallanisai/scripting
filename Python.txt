@@ -1,0 +1,51 @@
+Learning Python
+================
+
+Python uses interpretor to execute programs.
+Programming language like C, C++ use compilers.
+
+Compilers
+===========
+
+Compilers were the first sort of translator program to be written. The idea is simple: You write the program, then hand it to the compiler 
+which translates it. Then you run the result.
+
+Interpreters
+=============
+
+An interpreter is also a program that translates a high-level language into a low-level one, but it does it at the moment the program is run. 
+You write the program using a text editor or something similar, and then instruct the interpreter to run the program. It takes the program, 
+one line at a time, and translates each line before running it: It translates the first line and runs it, then translates the second line and 
+runs it etc.
+
+Compiler characteristics:
+=========================
+
+--> Spends a lot of time analyzing and processing the program
+--> The resulting executable is some form of machine- specific binary code
+--> The computer hardware interprets (executes) the resulting code
+--> Program execution is fast
+
+Interpreter characteristics:
+============================
+
+--> Relatively little time is spent analyzing and processing the program
+--> The resulting code is some sort of intermediate code
+--> The resulting code is interpreted by another program
+--> Program execution is relatively slow
+
+
+Python 2 has 31 keywords:
+and del from not while
+as elif global or with
+assert else if pass yield
+break except import print
+class exec in raise
+continue finally is return
+def for lambda try
+In Python 3, exec is no longer a keyword, but nonlocal is.
+
+
+
+
+Python is considered an interpreted language because Python programs are executed by an interpreter.
